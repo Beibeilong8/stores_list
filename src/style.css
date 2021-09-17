@@ -177,7 +177,7 @@ html, body, .main {
 /*************************** stores list create ************/
 .create-store, .create-product{
     position: fixed;
-    top: 20%;
+    top: 10%;
     left: 35%;
     max-width: 300px;
     background-color: #ffffff;
@@ -192,9 +192,10 @@ html, body, .main {
 .form__store-body{
     padding-top: 10px;
 }
-.form__store-body>input, .form__store-body>label{
+.form__store-body>input, .form__store-body>label, .form__store-body>select{
     width: 90%;
     margin: 1% 5% 5%;
+    max-height: 65px;
 }
 .form__store-value{
     padding: 2px 4px;
@@ -281,10 +282,10 @@ html, body, .main {
 .filter{
     padding: 10px;
     text-align: center;
-    width: 80px;
+    width: 77px;
     font-size: 12px;
-    display:flex;
-    flex-direction: column;
+    /* display:flex;
+    flex-direction: column; */
 }
 .filter__sum{
     position: relative;

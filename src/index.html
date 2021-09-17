@@ -35,10 +35,54 @@
         </aside>
         <section class="store-details">
             <div class="details__body wrapper">
-                <h3 class="header__text store-details__text" id="storeDetailsText">Store Details</h3>
+                <h3 class="header__text store-details__text header__text_inactive" id="storeDetailsText">Store is not selected</h3>
                 <header class="header store-details__header" id="storeDetailsHeader">
                 </header>
-                <section class="products store-details__products" id="storeDetailsProducts">
+                <section class="products store-details__products store-details__products-inactive" id="storeDetailsProducts">
+                    <table class="products-table none" id="productsTable">
+                        <caption class ="header-table__text header-table__row header-table">
+                            Products
+                        </caption>    
+                        <thead class="header-table products-table__header" id="headerTable">
+                            <tr class="header-table__row">
+                                <th class="header-table__value">
+                                    <img src="../images/sort-not-selected.svg" alt="sorting icon" class="sorting__image not-selected" id="sortingName">    
+                                    <span>Name</span>
+                                </th>
+                                <th class="header-table__value">
+                                    <img src="../images/sort-not-selected.svg" alt="sorting icon" class="sorting__image not-selected" id="sortingPrice">    
+                                    <span>Price</span>
+                                </th>
+                                <th class="header-table__value">
+                                    <img src="../images/sort-not-selected.svg" alt="sorting icon" class="sorting__image not-selected" id="sortingSpecs"> 
+                                    <span>Specs</span>
+                                </th>
+                                <th class="header-table__value">
+                                    <img src="../images/sort-not-selected.svg" alt="sorting icon" class="sorting__image not-selected" id="sortingSupplier"> 
+                                    <span>SupplierInfo</span>
+                                </th>
+                                <th class="header-table__value">
+                                    <img src="../images/sort-not-selected.svg" alt="sorting icon" class="sorting__image not-selected" id="sortingCountry"> 
+                                    <span>Country of origin</span>
+                                </th>
+                                <th class="header-table__value">
+                                    <img src="../images/sort-not-selected.svg" alt="sorting icon" class="sorting__image not-selected" id="sortingCompany"> 
+                                    <span>Prod. company</span>
+                                </th>
+                                <th class="header-table__value">
+                                    <img src="../images/sort-not-selected.svg" alt="sorting icon" class="sorting__image not-selected" id="sortingRating"> 
+                                    <span>Rating</span>
+                                </th>
+                                <th class="header-table__value"></th>
+                            </tr>
+                        </thead> 
+                        <tbody class="product-table__body" id="productsTableBody"></tbody>           
+                    </table>
+                    <div id="notSelectedStore">
+                        <img src="../images/store.svg" alt="Store is nor selected" class="not-selected-image" id="search-icon">
+                        <h3 class="not-selected-heading">The store is not selected</h3>
+                        <h4 class="not-selected-sub-heading">Please select the store to proceed</h4>    
+                    </div>
                 </section>  
             </div>
             <footer class="footer store-details__footer" id="storeDetailsFooter">
