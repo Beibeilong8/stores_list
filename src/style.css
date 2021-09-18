@@ -68,6 +68,32 @@ html, body, .main {
     width: 100vw;
     height: 100vh;
 }
+.error{
+    /* color: red; */
+    border: 1px solid red;
+    background-color: rgb(255, 245, 246);
+    visibility: visible;
+    /* background-color: gray; */
+}
+.error-message{
+    color: red;
+    margin: 2px 15px;
+    font-size: smaller;
+}
+.noneVisible{
+    visibility: hidden;
+}
+/* .error::after{
+    content: attr(data-error);
+    color: black;
+    padding: 0 2px;
+    font-size: 0.8rem;
+    display: inline-block;
+    background: #ffb6c1;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 3px);
+} */
 /******************************* common end ****************************/
 /********************************* pseudo ******************************/
 .product:hover, .stores-list__store:hover{
@@ -194,7 +220,7 @@ html, body, .main {
 }
 .form__store-body>input, .form__store-body>label, .form__store-body>select{
     width: 90%;
-    margin: 1% 5% 5%;
+    margin: 1% 5% 0;
     max-height: 65px;
 }
 .form__store-value{
@@ -205,6 +231,7 @@ html, body, .main {
     background-color: #404c58;
     padding: 5px;
     text-align: right;
+    margin-top: 10px;
 }
 .form__store-footer > input{
     background-color: #404c58;
@@ -223,8 +250,6 @@ html, body, .main {
     top: 10vh;
     left: 75vw;
 }
-/*************************** stores list delete ************/
-
 /*************************** stores list end **************************/
 /**************************** store details ***************************/
 .store-details{
@@ -284,8 +309,6 @@ html, body, .main {
     text-align: center;
     width: 77px;
     font-size: 12px;
-    /* display:flex;
-    flex-direction: column; */
 }
 .filter__sum{
     position: relative;
@@ -363,7 +386,7 @@ html, body, .main {
     height: 15px;
     padding: 0 5px 0 0;
 }
-.product-delete{
+.product-delete, .product-edit{
     height: 12px;
 }
 .product__more{
