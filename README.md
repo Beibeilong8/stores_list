@@ -1,14 +1,13 @@
-# Setup
 
-- It is recommended that you use [Visual Studio Code](https://code.visualstudio.com/) as your text editor
-- Install [NodeJS LTS](https://nodejs.org/en/)
-- Run `npm ci`
+  Stores List
+  -----------
 
+    What is it?
 
-# Development
+  The Stores List is a Web-site with Stores List and Store's products.
+  
+    Installation
 
-Application code should be in `src` folder.
+  Please install stores-api and start it (use 'npm run db'; 'node .').
+  
 
-- Run `npm start` to start live-reload web server
-- Run `npm run lint` to lint your code
-- Run `npm run lint-fix` to fix all auto-fixable issues (e.g. code styling)
